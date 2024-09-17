@@ -5,9 +5,12 @@ function Navbar() {
     <div>
       <nav className="navbar">
         <div className="navbar-container">
-          <h1>soy la navbar</h1>
+          <a href="#quienes-somos">
+            <button>Quienes somos</button>
+          </a>
         </div>
       </nav>
+      {/* {click && <QuienesSomos />} */}
     </div>
   );
 }

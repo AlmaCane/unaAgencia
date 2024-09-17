@@ -3,7 +3,7 @@
   pointer-events: none;
 }
 body {
-  background-color: #ec4141; /* Sustituye este color por el que prefieras */
+  background-color: #fb580d; /* Sustituye este color por el que prefieras */
   margin: 0; /* Asegúrate de que no haya márgenes */
   height: 100vh; /* Esto asegura que cubra toda la ventana */
 }
