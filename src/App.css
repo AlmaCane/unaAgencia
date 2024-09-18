@@ -1,9 +1,37 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 body {
-  background-color: #fb580d; /* Sustituye este color por el que prefieras */
-  margin: 0; /* Asegúrate de que no haya márgenes */
-  height: 100vh; /* Esto asegura que cubra toda la ventana */
+  background-color: #fb580d;
+  margin: 0;
+  height: 100vh;
+}
+
+/* El contenedor del video */
+.video-background {
+  position: relative; /* No fixed, para que permita el contenido abajo */
+  width: 100%;
+  height: 100vh; /* El video ocupa toda la pantalla */
+  z-index: 1; /* Asegura que esté en el fondo */
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+  z-index: 1;
+}
+
+/* El contenido debajo del video */
+.content {
+  position: relative;
+  z-index: 2; /* El contenido por encima del video */
+  margin-top: 100vh; /* Empieza después del video */
+  color: white;
+  padding: 20px;
+}
+
+/* Estilo de la Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
 }
