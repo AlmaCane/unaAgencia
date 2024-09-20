@@ -13,8 +13,13 @@ function App() {
           Tu navegador no soporta videos.
         </video>
       </div>
-      <div className="content">
+      <div className="navbar">
         <Navbar />
+      </div>
+      <div className="logo">
+        <img className="logo" src="/logo.png" alt="logo" />
+      </div>
+      <div className="content">
         <QuienesSomos />
         <QueHacemos />
       </div>

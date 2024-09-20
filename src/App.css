@@ -3,12 +3,10 @@ body {
   margin: 0;
   height: 100vh;
 }
-
-/* El contenedor del video */
 .video-background {
-  position: relative; /* No fixed, para que permita el contenido abajo */
+  position: relative;
   width: 100%;
-  height: 100vh; /* El video ocupa toda la pantalla */
+  height: 100vh; /* Ocupa solo la pantalla inicial */
   z-index: 1; /* Asegura que esté en el fondo */
   overflow: hidden;
 }
@@ -20,18 +18,36 @@ body {
   z-index: 1;
 }
 
-/* El contenido debajo del video */
-.content {
-  position: relative;
-  z-index: 2; /* El contenido por encima del video */
-  margin-top: 100vh; /* Empieza después del video */
-  color: white;
-  padding: 20px;
+/* Posicionar la Navbar en la esquina superior derecha */
+.navbar {
+  position: absolute;
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  z-index: 2; /* Asegura que esté sobre el video */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Fondo semi-transparente para que se vea sobre el video */
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
-/* Estilo de la Navbar */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  width: 100%;
+/* El contenido comienza después del video */
+.content {
+  position: relative;
+  z-index: 2; /* Asegura que esté visible sobre el video */
+  margin-top: 100vh; /* Mueve el contenido justo después del video */
+  padding: 20px;
+  color: white;
+}
+.logo {
+  position: absolute;
+  width: 50%;
+  top: 180px; /* Ajusta la distancia desde la parte superior */
+  left: 20px; /* Ajusta la distancia desde el borde derecho */
+  z-index: 2; /* Asegura que esté sobre el video */
+
+  padding: 10px 20px;
 }
